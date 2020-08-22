@@ -43,8 +43,9 @@ button {
 
 .timer {
   position: absolute;
-  left: 3.8em;
-  top: 4.3em;
+  font: 4em orange;
+  left: 3.5em;
+  top: 5.7em;
   height: 2.5em;
   width: 2.5em;
   font-size: 4em;
@@ -57,4 +58,5 @@ button {
   margin: 0.5em;
 }
 .info--resetinfo {
+  margin: 0em;
 }

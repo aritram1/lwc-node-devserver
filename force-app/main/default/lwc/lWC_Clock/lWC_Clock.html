@@ -2,10 +2,11 @@
   <template if:true={showTime}>
     <button onclick={resetClock}>Tap to reset</button>
     <button onclick={stopClock}>Tap to stop</button>
-    <button onclick={startClock}>Tap to start</button>
+    <button onclick={startClock} running>Tap to start</button>
+    {running}
     <div class="info info--resetinfo">
       Reset Information : Last reset was {timeElapsed} seconds ago
-      <!-- <template for:each={resetInfo} for:item="re">
+      <!-- <template for:each={clockInfo} for:item="re">
                 <span key={re.time}>
                     Time: {re.time}
                     By: {re.name}
@@ -23,6 +24,6 @@
         <div class="number number--content-bottom">9</div>
       </div>
     </div>
-    <div class="number timer">{timeElapsed}</div>
+    <div class="timer">{timeElapsed}</div>
   </template>
 </template>
